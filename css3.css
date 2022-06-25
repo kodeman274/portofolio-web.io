@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image:  url(https://user-images.githubusercontent.com/99820483/169759277-5596356d-3148-44a8-9615-58bd4e2ab843.jpg);
+  background-size: cover;
+  color: #ffff;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #fb3958;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left h2 a:hover {
+  background-color: : white;
+  padding: 15px;
+
+}
+.header-left a {
+  color:#55acee;
+}
+
+.header-left h2 a:hover{
+  transition: .3s;
+}
+
+.header-left h2 {
+  display:inline-block;
+  float:left;
+  padding:20px 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color:rgba(30, 233, 255, 0.5);
+}
+.header-left:after{
+  content: '';
+  display: block;
+  clear: left;
+}
+  .logo {
+  width: 110px;
+  height: 60px;
+  margin-top: 5px;
+  float: left;
+}
+
+
+
+.header-left {
+  float: left;
+}
+
+.header-right  {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right ul li {
+  padding bottom:10px;
+  display: inline-block;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+   color:#55acee;
+  display: inline-block;
+  transition: all 0.3s;
+}
+  
+.lesson-wrapper {
+  height: 450px;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+
+/* Tambahkan CSS untuk menu-icon */
+/*.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* Gantikan property display ke none */
+  display: none;
+}
+
+*/
+
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading p {
+  text-align: left;
+  padding-left: 2px;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 60px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.message {
+  padding:30px 60px;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 0 7px white;
+  display: inline-block;
+  width: 100%;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.col-4 img:hover {
+/*transform: scale(1,2);
+*/}
+
+.col-4 img{
+ padding-left: 2px;
+
+}
+.message a {
+  color:#800080;
+  padding-bottom: 10px;
+}
+.message a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+footer small {
+  color: #fff;
+}
+
+footer {
+  padding: 25px;
+  background-color: #333;
+  text-align: center;
+}
+
+
+
+.message1 {
+  padding:30px 60px;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 0 7px white;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: top:10px;
+}
+.message1 a {
+  padding-bottom: 20px;
+  color:#800080;
+}
+.message1 a:hover {
+background-color: rgba(255, 255, 255, 0.5);
+
+}
+.col-3 a img:hover {
+  transform: scale(1,2);
+}
+.col-3 img  {
+  padding-left: 2px;
+}
+
+/*@media screen and (max-width: 576px;) {
+  .header-right ul >li> a{
+    display: none;
+  }
+}
+*/
+/*.message1 img:hover {
+transform: scale(2,2);*/
+
+/*@media screen and (max-width:680px){
+
+  #header{
+    width: auto;
+    float: none;
+  }
+  .top-wrapper{
+    width: auto;
+    float: none;
+  }
+  .lesson-wrapper{
+    width: auto;
+    float: none;
+  }
+  .message-wrapper{
+    width: auto;
+    float: none;
+  }
+  #footer{
+    width: auto;
+    float: none;
+  }
+}
+
+@media screen and (max-width:480px){
+ #header{
+    width: auto;
+    float: none;
+  }
+  .top-wrapper{
+    width: auto;
+    float: none;
+  }
+  .lesson-wrapper{
+    width: auto;
+    float: none;
+  }
+  .message-wrapper{
+    width: auto;
+    float: none;
+  }
+  #footer{
+    width: auto;
+    float: none;
+  }
+}*/
