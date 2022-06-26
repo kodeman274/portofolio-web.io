@@ -191,6 +191,11 @@ header {
   color: #5f5d60;
 }
 
+.heading h4 {
+  text-align: left;
+  padding-left: 2px;
+}
+
 .heading p {
   text-align: left;
   padding-left: 2px;
