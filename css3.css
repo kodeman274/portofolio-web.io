@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@kodeman274 
+kodeman274
+/
+portofolio-web.io
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+portofolio-web.io/css3.css
+@kodeman274
+kodeman274 Update css3.css
+Latest commit daf03b5 36 minutes ago
+ History
+ 1 contributor
+367 lines (308 sloc)  4.81 KB
+
 * {
   box-sizing: border-box;
 }
@@ -320,7 +349,6 @@ background-color: rgba(255, 255, 255, 0.5);
 transform: scale(2,2);*/
 
 /*@media screen and (max-width:680px){
-
   #header{
     width: auto;
     float: none;
@@ -342,7 +370,6 @@ transform: scale(2,2);*/
     float: none;
   }
 }
-
 @media screen and (max-width:480px){
  #header{
     width: auto;
@@ -365,3 +392,16 @@ transform: scale(2,2);*/
     float: none;
   }
 }*/
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
