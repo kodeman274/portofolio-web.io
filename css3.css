@@ -190,7 +190,32 @@ header {
   padding-bottom: 30px;
   color: #5f5d60;
 }
+.border1 {
+  border-style: solid;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
 
+
+.border2 {
+  border-style: solid;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+
+
+.border3 {
+  border-style: solid;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
 .heading  p {
   text-align: justify;
   padding-left: 2px;
