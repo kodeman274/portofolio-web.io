@@ -226,6 +226,18 @@ header {
   font-weight: normal;
 }
 
+.border1  p {
+  padding: 5px 10px 5px 10px ;
+}
+
+
+.border2  p {
+  padding: 5px 10px 5px 10px ;
+}
+
+.border3  p {
+  padding: 5px 10px 5px 10px ;
+
 .lesson {
   float: left;
   width: 25%;
