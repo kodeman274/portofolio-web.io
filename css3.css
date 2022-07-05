@@ -190,31 +190,10 @@ header {
   padding-bottom: 30px;
   color: #5f5d60;
 }
-.border1 {
-  border-style: solid;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 3px;
-  padding-right: 3px;
-}
 
-
-.border2 {
-  border-style: solid;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
-
-
-.border3 {
-  border-style: solid;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 3px;
-  padding-right: 3px;
+.heading h4 h2{
+  text-align: center;
+  padding-left: 2px;
 }
 .heading  p {
   text-align: justify;
@@ -225,18 +204,6 @@ header {
 .heading h2 {
   font-weight: normal;
 }
-
-.border1  p {
-  padding: 5px 10px 5px 10px ;
-}
-
-
-.border2  p {
-  padding: 5px 10px 5px 10px ;
-}
-
-.border3  p {
-  padding: 5px 10px 5px 10px ;
 
 .lesson {
   float: left;
@@ -314,10 +281,49 @@ footer {
   padding: 25px;
   background-color: #333;
   text-align: center;
+
+}
+
+
+.border1 {
+  border-style: solid;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+
+.border2 {
+  border-style: solid;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 
 
+.border3 {
+  border-style: solid;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.border1  p {
+  padding: 5px 10px 5px 10px ;
+}
+
+
+.border2  p {
+  padding: 5px 10px 5px 10px ;
+}
+
+.border3  p {
+  padding: 5px 10px 5px 10px ;
+}
 .message1 {
   padding:30px 60px;
   background-color: black;
