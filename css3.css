@@ -325,7 +325,7 @@ footer {
   padding: 5px 10px 5px 10px ;
 }
 .message1 {
-  padding:30px 60px;
+  padding:30px 60px 30px 60px;
   background-color: black;
   cursor: pointer;
   box-shadow: 0 7px white;
@@ -333,6 +333,11 @@ footer {
   width: 100%;
   text-align: center;
   padding-top: top:10px;
+}
+.message1:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 .message1 a {
   padding-bottom: 20px;
@@ -347,6 +352,9 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 .col-3 img  {
   padding-left: 2px;
+}
+.message1 h3 {
+   : white
 }
 
 /*@media screen and (max-width: 576px;) {
