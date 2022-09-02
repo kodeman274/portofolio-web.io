@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>©HILMAN HIDAYAT</title>
     <link rel="stylesheet" href="css3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="https://user-images.githubusercontent.com/99820483/175750992-f36ac4bc-668f-4937-bd5a-8c8e134ddcdc.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="h//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        // Tambahkan smooth scrolling ke semua link
+        $("a").on('click', function(event) {
+
+          // Pastikan this.hash memiliki nilai sebelum mengganti perilaku default
+          if (this.hash !== "") {
+            // Mencegah perilaku klik tautan default
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Menggunakan metode animate() jQuery untuk menambahkan scroll halaman yang smooth
+            // Bilangan opsional (800) menentukan jumlah milidetik yang diperlukan untuk melakukan scrolling ke area yang ditentukan
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Tambahkan hash (#) ke URL setelah selesai scrolling (perilaku klik default)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
   </head>
   <body>
+    
     <header>
       <div class="container">
-        <div class="header-left">
-           <a href="#"><img class="logo" src="https://user-images.githubusercontent.com/99820483/175750867-e763fab6-28f4-4bc3-bc44-aca45c29197b.gif"></a>
-           <h2><a href="tel:+6285718010129">HILMAN HIDAYAT</a></h2>
-        </div>
-        <div class="header-right">
+        <menu>
+          <div class="toggle"><i class="fas fa-bars navbar"></i></div>
+          <div class="header-left">
+            <a href="#"><img class="logo" src="https://user-images.githubusercontent.com/99820483/175750867-e763fab6-28f4-4bc3-bc44-aca45c29197b.gif"></a>
+            <h2 ><a href="tel:+6285718010129">HILMAN HIDAYAT</a></h2>
+         </div>
           <ul>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#About">About</a></li>
+           <li> <a href="#Portofolio">Portofolio</a></li>
+          
+          </ul>
+        
+        </menu>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('.navbar').click(function(){
+              $('ul').toggleClass('active');
+            })
+          })
+        </script>
+        
+        <!-- <div class="header-right">
+          <ul class="nav">
           <li><a href="#Contact">Contact</a></li>
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#About">About</a></li>
          <li> <a href="#Portofolio">Portofolio</a></li>
        </ul>
-        </div>
+        </div> -->
       </div>
     </header>
   <section id="Contact">
     <div class="top-wrapper">
         <div class="container">
-        <h1><marquee scrollamount="20" >WELCOME TO MY WEBSITE</marquee></h1>
-        <h1>Hilman Hidayat<br>~CODEMAN~</br></h1>
-        <h2>Haii...<br>
+        <h1 class="kecil1"><marquee scrollamount="20" >WELCOME TO MY WEBSITE</marquee></h1>
+        <h1 class="kecil1">Hilman Hidayat<br>~CODEMAN~</br></h1>
+        <h2 class="kecil2">Haii...<br>
           Saya adalah Front-End Developer <span class="efek-ngetik"></span></h2>
-        <p>Ini adalah Website Portofolio Saya!</p>
+        <p class="kecil">Ini adalah Website Portofolio Saya!</p>
         <div class="btn-wrapper">
           <a href="hilmanh179k@gmail.com"target="_blank" class="btn signup">My Email</a>
           <p>Or</p>
@@ -88,21 +143,21 @@
       <div class="container">
         <div class="heading">
           <div class="border1">
-          <h2>About Me</h2>
-          <h4><b>Perkenalan:</h4></b>
-          <p>Perkenalkan nama Saya Hilman Hidayat biasa dipanggil Hilman, Saya tinggal di Munjul Jakarta timur dan Saya juga baru lulus dari SMAN 39 Jakarta, sebelumnya saya sudah mengikuti berbagai Pelatihan/Course Online,</p>
+          <h2 class="kecil">About Me</h2>
+          <h4 class="hilang"><b>Perkenalan:</h4></b>
+          <p class="hilang">Perkenalkan nama Saya Hilman Hidayat biasa dipanggil Hilman, Saya tinggal di Munjul Jakarta timur dan Saya juga baru lulus dari SMAN 39 Jakarta, sebelumnya saya sudah mengikuti berbagai Pelatihan/Course Online,</p>
           </div>
    </div>
             
           <div class="border2">
-          <br><h4><b>Tujuan dan Alasan Menunda Kuliah:</br></h4></b>
-          <p>Niat saya ingin belajar lebih fokus lagi Otodidak dan mungkin saya akan lebih memilih Bootcamp Offline nantinya, dibandingkan untuk kuliah, dikarenakan kuliah sangat lama/tidak efisien di waktu dan menurut saya materi yang diajarkan lebih universal, bukan disuatu bidang materi pembelajaran, tapi lebih ke semua basic materi programming, misal di perkuliahan pasti semua materi masuk, tapi tidak terlalu dalam materinya, ini yang membuat kebanyakan para mahasiswa menurut saya jadi bingung untuk fokus ke tujuan apa dan mau kemana, ataupun mereka sudah pusing duluan memfokusi bidang apa, karna memang saya mengakui jika kita tidak bisa konsistensi dalam bidang yang kita geluti, kita bisa gagal dalam tujuan itu, dan mungkin itu juga yang membuat survei atas lulusan IT saat didunia kerja malah terkadang tidak sesuai dengan passion mereka, yang harusnya terjun kedunia IT , dan itulah pendapat saya tentang jalan belajar saya ke dunia Programming yaitu lebih memilih untuk otodidak dulu atau bootcamp yang waktunya lebih singkat dan materi yang diajarkan ke tujuan yang kita mau, misal mau ke Front-end, Back-end ataupun Mobile App, tapi ini murni opini dari Saya, disclaimer disini atau tidak bermaksud mendoktrin agar orang-orang harus seperti saya, setiap orang mempunyai opini yang berbeda, dan Saya juga tidak bilang bahwa kuliah tidak dianjurkan ya.., setiap orang memiliki tujuan yang berbeda-beda, untuk Saya sendiri, Saya akan kuliah nantinya mungkin kuliah kelas karyawan, saat sudah bisa menghasilkan pendapatan sendiri agar bisa mandiri/tidak bergantung Orang tua dan tidak dapat dipungkiri memang di indonesia  masih banyak sebagian startup/perusahaan yang kriterianya minimal sarjana tapi tidak menutup kemungkinan Perusahaan yang lebih memikirkan skills daripada title seseorang, dan untuk saat ini Saya masih mempelajari Programming dibagian Front-end web, saya sudah menguasai HTML, CSS, JAVASCRIPT dan lagi mendalami Framework Node.Js & React.Js.</p>
+          <br><h4 class="hilang"><b>Tujuan dan Alasan Menunda Kuliah:</br></h4></b>
+          <p class="hilang">Niat saya ingin belajar lebih fokus lagi Otodidak dan mungkin saya akan lebih memilih Bootcamp Offline nantinya, dibandingkan untuk kuliah, dikarenakan kuliah sangat lama/tidak efisien di waktu dan menurut saya materi yang diajarkan lebih universal, bukan disuatu bidang materi pembelajaran, tapi lebih ke semua basic materi programming, misal di perkuliahan pasti semua materi masuk, tapi tidak terlalu dalam materinya, ini yang membuat kebanyakan para mahasiswa menurut saya jadi bingung untuk fokus ke tujuan apa dan mau kemana, ataupun mereka sudah pusing duluan memfokusi bidang apa, karna memang saya mengakui jika kita tidak bisa konsistensi dalam bidang yang kita geluti, kita bisa gagal dalam tujuan itu, dan mungkin itu juga yang membuat survei atas lulusan IT saat didunia kerja malah terkadang tidak sesuai dengan passion mereka, yang harusnya terjun kedunia IT , dan itulah pendapat saya tentang jalan belajar saya ke dunia Programming yaitu lebih memilih untuk otodidak dulu atau bootcamp yang waktunya lebih singkat dan materi yang diajarkan ke tujuan yang kita mau, misal mau ke Front-end, Back-end ataupun Mobile App, tapi ini murni opini dari Saya, disclaimer disini atau tidak bermaksud mendoktrin agar orang-orang harus seperti saya, setiap orang mempunyai opini yang berbeda, dan Saya juga tidak bilang bahwa kuliah tidak dianjurkan ya.., setiap orang memiliki tujuan yang berbeda-beda, untuk Saya sendiri, Saya akan kuliah nantinya mungkin kuliah kelas karyawan, saat sudah bisa menghasilkan pendapatan sendiri agar bisa mandiri/tidak bergantung Orang tua dan tidak dapat dipungkiri memang di indonesia  masih banyak sebagian startup/perusahaan yang kriterianya minimal sarjana tapi tidak menutup kemungkinan Perusahaan yang lebih memikirkan skills daripada title seseorang, dan untuk saat ini Saya masih mempelajari Programming dibagian Front-end web, saya sudah menguasai HTML, CSS, JAVASCRIPT dan lagi mendalami Framework Node.Js & React.Js.</p>
           </div>
 
           <div class="border3">
-          <br><h4><b> Alasan Saya tertarik dibidang IT/Programming yaitu:</br></h4></b>
+          <br><h4 class="hilang"><b> Alasan Saya tertarik dibidang IT/Programming yaitu:</br></h4></b>
 
-          <p><em><q>Karna teknologi yang selalu berkembang setiap saat dan kita akan selalu mempelajari hal baru, jika tidak ingin tertinggal kita harus explorer terus berbagai teknologi/bahasa pemograman baru, harapan Saya yaitu ingin banyak berkontribusi di dunia IT ini dan banyak membantu orang atau bisa membuka lapangan pekerjaan, target Saya juga ingin memiliki startup sendiri dibidang IT.</p></em></q>
+          <p class="hilang"><em><q>Karna teknologi yang selalu berkembang setiap saat dan kita akan selalu mempelajari hal baru, jika tidak ingin tertinggal kita harus explorer terus berbagai teknologi/bahasa pemograman baru, harapan Saya yaitu ingin banyak berkontribusi di dunia IT ini dan banyak membantu orang atau bisa membuka lapangan pekerjaan, target Saya juga ingin memiliki startup sendiri dibidang IT.</p></em></q>
 
 
 
@@ -110,63 +165,71 @@
       </section>
         <section id="Portofolio">
          <span class="btn message"><a href="https://github.com/kodeman274">My Github</a><h3>Portofolio<br></br></h3>
-        <div class="col-4">
-        <img src="https://user-images.githubusercontent.com/99820483/175780609-8427c3c9-4fa6-4d1e-84f2-d206074817b3.png">
-        <img src="https://user-images.githubusercontent.com/99820483/175780601-721828c3-e263-47c8-8655-f82840bbcc62.png">
-        <img src="https://user-images.githubusercontent.com/99820483/175780604-edf7ad78-0f3a-4bb7-98ff-f50b85cdfbf4.png">
-        <img src="https://user-images.githubusercontent.com/99820483/175780606-081dd879-a33f-4034-9dc6-3e84749d807e.png">
-        <img src="https://user-images.githubusercontent.com/99820483/175780613-c6e0f644-bcf1-4d33-b70e-ef21f1573a28.jpg">
-        <img src="https://user-images.githubusercontent.com/99820483/175780608-ce3569b7-6b96-49f7-9f2a-016be59780a5.jpg">
-        <img src="https://user-images.githubusercontent.com/99820483/176655862-6c0370d4-83f3-4cb5-82c4-cb6de66497b9.jpg">
-        <img src="https://user-images.githubusercontent.com/99820483/176247730-20caae10-cd80-41d1-bb0a-434a717a8bd3.png">
-        <img src="https://user-images.githubusercontent.com/99820483/176247420-9785f9ee-fdc8-4357-a404-8be87b14307f.png">
-        <img src="https://user-images.githubusercontent.com/99820483/176247403-985702cb-42d2-40d8-a130-ed2caef322b1.png">
-        <img src="https://user-images.githubusercontent.com/99820483/178096929-b9092982-f258-42e5-915c-685bc0c95d0a.jpg">
+          <div class="galery">
+            <img src="https://user-images.githubusercontent.com/99820483/188101353-70935f74-55b3-47b9-aa62-20c4f6ea00a4.jpg" class="jumbo">
+              <div class="col-4">
+                <img src="https://user-images.githubusercontent.com/99820483/188101394-20646da2-1290-4de3-b65b-6f1de13044cd.png" class="thumb" style=" width:320px;">
+                <img src="https://user-images.githubusercontent.com/99820483/188101418-6c16ac6d-6144-413d-a020-0e2c20d69650.png"
+                class="thumb" style="width: 320px;">
+                <img src="https://user-images.githubusercontent.com/99820483/188101425-64e2b158-5201-4281-8b1c-04f0fb4e8c8c.png" class="thumb" style="width: 320px;">
+                <img src="https://user-images.githubusercontent.com/99820483/188101420-f1895851-2165-4aa8-a54f-a8511b1dbadf.png" class="thumb" style="width: 320px;">
+                <img src="https://user-images.githubusercontent.com/99820483/188101387-837774f0-ad80-4bf0-9db8-7179e868a293.jpg" class="thumb" style="width: 320px;">
+                <img src="https://user-images.githubusercontent.com/99820483/188111524-62da1542-faad-4af4-a5b9-dc0a5994269c.png" class="thumb" style="width: 320px;">
+                <img src="https://user-images.githubusercontent.com/99820483/188101353-70935f74-55b3-47b9-aa62-20c4f6ea00a4.jpg" class="thumb" style="width: 320px;">
 
-  
 
-      </div></span> 
+      
+            </div></span>
+          </div>
+      
        <span class="message1"><a href="https://kodeman274.github.io/portofolio-web.io/" target="_blank">My Web</a><br></br>
-        <a href="http://sintacatering2121.000webhostapp.com" target="_blank">Web Catering - </a>
-        <a href="https://kodeman274.github.io/hilman-webprofil.github.io/" target="_blank">Web Profil - </a>
-        <a href="https://kodeman274.github.io/calculator.github.io/" target="_blank">Web Calculator</a>
+        <a href="http://sintacatering2121.000webhostapp.com" target="_blank" class="hilang">Web Catering - </a>
+        <a href="https://kodeman274.github.io/hilman-webprofil.github.io/" target="_blank"class="hilang">Web Profil - </a>
+        <a href="https://kodeman274.github.io/calculator.github.io/" target="_blank"class="hilang">Web Calculator - </a>
+        <a href="https://tools-dev.kodeman274.repl.co/" target="_blank"class="hilang">Web Tools Dev - </a>
+        <a href="https://todolist-apps.kodeman274.repl.co/" target="_blank"class="hilang">Web Todo List - </a>
+        <a href="https://bookshelf-apps.kodeman274.repl.co/" target="_blank"class="hilang">Web Bookshelf </a>
         <br></br>
-      <div class="col-3">
-        <img src="https://user-images.githubusercontent.com/99820483/175780730-5db17c8f-dccc-4403-b08f-8ef78edd209c.jpg">
-        <img src="https://user-images.githubusercontent.com/99820483/175780732-56643f81-8c84-4ee5-9b09-7d57d22ca8ed.jpg">
-        <img src="https://user-images.githubusercontent.com/99820483/175780733-233b45c0-85a0-406b-937c-65b13f6d4b0c.jpg">
-        <img src="https://user-images.githubusercontent.com/99820483/175780735-43341e33-20a5-40af-b754-6b52c7c39a20.jpg">
-        <img src="https://user-images.githubusercontent.com/99820483/175780737-df968a91-6a11-4881-b4b2-eb32a75c88dc.jpg">
-        <img src="https://user-images.githubusercontent.com/99820483/175780738-ada82e30-8f2f-40e9-a75b-2c11015932ab.jpg">
+        <div class="galery1">
+          <img src="https://user-images.githubusercontent.com/99820483/188118704-81fc2afe-f70e-444f-a737-0547dd4336d6.png" class="jumbo1">
+        <div class="col-3">
+        
+        <img src="https://user-images.githubusercontent.com/99820483/188118704-81fc2afe-f70e-444f-a737-0547dd4336d6.png" class="thumb1" style="width: 320px;">
+        <img src="https://user-images.githubusercontent.com/99820483/175436047-0bf29383-19f9-4555-adb2-ffab8cead276.png" class="thumb1" style=" width:320px;">
+        <img src="https://user-images.githubusercontent.com/99820483/175439424-a587370f-922d-48de-8bf3-4d430e19ce2d.png"
+        class="thumb1" style="width: 320px;">
+        <img src="https://user-images.githubusercontent.com/99820483/186074192-4d717614-91e1-42b8-8d83-dd69c982da9f.png" class="thumb1" style="width: 320px;">
+        <img src="https://user-images.githubusercontent.com/99820483/186075512-5992191e-13a6-418e-9331-0ffac4d3e0d8.png" class="thumb1" style="width: 320px;">
+        <img src="https://user-images.githubusercontent.com/99820483/186075795-c5bf3843-17fd-4289-b4ea-83c84a2c1144.png" class="thumb1" style="width: 320px;">
+
+        <!-- <img src="https://user-images.githubusercontent.com/99820483/175780738-ada82e30-8f2f-40e9-a75b-2c11015932ab.jpg">
         <img src="https://user-images.githubusercontent.com/99820483/175780740-17485181-f7e0-452b-9ad7-43244b2b0839.png">
         <img src="https://user-images.githubusercontent.com/99820483/175780743-26254f09-6c72-4072-8b1f-7ac9a02822e5.png">
         <img src="https://user-images.githubusercontent.com/99820483/175780746-dd93cb95-6ce1-4dd1-9f6d-9029864682fa.png">
         <img src="https://user-images.githubusercontent.com/99820483/175780747-118d98e2-0ed5-468d-908e-b47a23fdc029.png">
         <img src="https://user-images.githubusercontent.com/99820483/178098291-81559e58-1a7c-4450-8368-4536e612967a.png">
-        <img src="https://user-images.githubusercontent.com/99820483/178098293-58a4d241-dda0-4bcb-817e-3ceaa105e4b0.png">
-
-        <p><br>Sekian... TERIMA KASIH~</br></p>
-         <div class="share-button">
-    <span> SHARE</span>
-    <a href="https://www.instagram.com/hilmanhidayt_" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://hilman17939.000webhostapp.com/" target="_blank">
-      <i class="fab fa-dribbble"></i>
-    </a>
-    
-    <a href="https://github.com/kodeman274" target="_blank">
-      <i class="fab fa-github"></i>
-
-  </div>
+        <img src="https://user-images.githubusercontent.com/99820483/178098293-58a4d241-dda0-4bcb-817e-3ceaa105e4b0.png"> -->
+          </
+          </div>
       </div></span>
     </div>
   </div>
+
+<!-- 
+            <div class="imgslide fade">
+                <div class="numberslide">4 / 4</div>
+                <img src="https://user-images.githubusercontent.com/99820483/175439424-a587370f-922d-48de-8bf3-4d430e19ce2d.png" alt="">
+                <div class="text">Web calculator</div> -->
+            </div>
+
+
+   
 </section>
     <footer>
       <div class="container">
         <small>Copyright &copy;2022 - Hilman Hidayat.</small>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
