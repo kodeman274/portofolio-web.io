@@ -1,3 +1,4 @@
+// for galery portofolio
 const galery = document.querySelector(".galery");
 const jumbo = document.querySelector(".jumbo");
 let eOld = null;
@@ -11,9 +12,6 @@ galery.addEventListener("click", function (e) {
     }, 500);
   }
 });
-
-// const nav = document.querySelector(".nav");
-// nav.style.display = "none";
 
 const galery1 = document.querySelector(".galery1");
 const jumbo1 = document.querySelector(".jumbo1");
