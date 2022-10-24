@@ -18,9 +18,6 @@ body {
 }
 
 
-
-
-
 a {
   text-decoration: none;
 }
@@ -136,8 +133,6 @@ header {
   float: left;
 }
 
-
-
 .header-left {
   float: right;
 }
@@ -175,21 +170,6 @@ header {
   text-align: center;
   padding-top: 60px;
 }
-
-
-
-/* Tambahkan CSS untuk menu-icon */
-/*.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  /* Gantikan property display ke none */
-  display: none;
-}
-
-*/
-
 
 .heading {
   padding-top: 60px;
@@ -260,9 +240,6 @@ header {
   top: 7px;
   box-shadow: none;
 }
-.col-4 img:hover {
-/*transform: scale(1,2);
-*/}
 
 .col-4 img{
  padding-left: 4px;
@@ -273,10 +250,7 @@ header {
   color:#800080;
   padding-bottom: 10px;
 }
-/* .message a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  transition background-color: .5s ease-in-out;
-} */
+
 html {
   scroll-behavior: smooth;
 }
@@ -288,11 +262,8 @@ footer small {
 footer {
   padding: 25px;
   background-color: #333;
-  text-align: center;
-  
-
+  text-align: center;  
 }
-
 
 .border1 {
   border-style: solid;
@@ -303,7 +274,6 @@ footer {
   background-image: linear-gradient( 109.6deg,  rgba(245,239,249,1) 30.1%, rgba(207,211,236,1) 100.2% );  opacity: 1.2;
 
 }
-
 
 .border2 {
   border-style: solid;
@@ -354,19 +324,12 @@ footer {
   display: inline-block;
   width: 100%;
 }
-/* .message1:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-} */
+
 .message1 a {
   padding-bottom: 20px;
   color:#800080;
 }
-/* .message1 a:hover { */
-/* background-color: rgba(255, 255, 255, 0.5);
 
-} */
 .col-3  img:hover {
   cursor: pointer;
   opacity: 0.5;
@@ -375,8 +338,6 @@ footer {
   padding-left: 2px;
   padding-bottom: 2px;
 }
-
-
 
 section.container5 {
   box-sizing: border-box;
@@ -389,8 +350,6 @@ section.container5 {
   padding: 100px 0 0 0;
   display: flexbox;
 }
-
-
 
 .galery > .jumbo {
   width: 500px;
@@ -407,7 +366,6 @@ section.container5 {
 .galery > .col-4 > img > .thumb {
   width: 110px;
 }
-
 
 .galery1 > .jumbo1 {
   width: 500px;
